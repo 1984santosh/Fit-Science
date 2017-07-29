@@ -1,0 +1,22 @@
+{
+  "name": "fit-science",
+  "version": "1.0.0",
+  "description": "Repository contains app code to extract nutrition information related to natural products like (fruits and vegetables) based on real time object identification technology",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3PillarGlobal/Fit-Science.git"
+  },
+  "author": "shivendra, Tarun, gaurav, santosh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "bugs": {
+    "url": "https://github.com/3PillarGlobal/Fit-Science/issues"
+  },
+  "homepage": "https://github.com/3PillarGlobal/Fit-Science#readme"
+}
