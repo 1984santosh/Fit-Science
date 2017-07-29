@@ -1,1 +1,114 @@
-Fit-Science :)
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Fit-Science</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="starter-template">
+            <h1>Hello, Healthy People's!</h1>
+            <p class="lead">Get quick, consistent nutritional facts on the click! Fit Science Web application is a straight forward way to make the nutritious choice every time. This small but impressive application allows you to look up nutritional facts for thousands of fruits and vegetables in just one click.</p>
+        </div>
+        <div class="form-group" id="divCanvas">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Canvas</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video id="video" height="" autoplay loop class="embed-responsive-item"></video>
+                            </div>
+                        </div>
+                        <div class="form-group center-block">
+                            <div class="row">
+                                <div class="text-center">
+                                    <button id="captureImage" type="button" class="btn btn-primary btn-lg">Capture your snap here!!!</button>
+                                    <button id="resetImage" type="button" class="btn btn-primary btn-lg">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" style="display:none">
+                            <div class="text-center">
+                                <h4>Or upload a file </h4>
+                            </div>
+                        </div>
+                        <div class="form-group" style="display:none">
+                            <div class="text-center">
+                                <label class="btn btn-default">
+                                    Browse
+                                    <input id="filename" type="file" hidden>
+                                </label>
+                                <button id="identifyImage" type="button" class="btn btn-primary btn-lg">Identify Image</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 id="objectIden" class="panel-title">Captured Snap!!</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="canvasForm" class="form-group">
+                            <canvas id="canvas" width="300" height="165"></canvas>
+                        </div>
+                        <div class="form-group center-block">
+                            <div class="row">
+                                <div class="text-center">
+                                    <button id="btnNutrition" type="button" class="btn btn-primary btn-lg" disabled>Proceed for nutrition values...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" id="divNutrition" style="display: none;">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Here's your nutrition details:</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group" id="nutritionDetails">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Return to identify another item:</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group center-block">
+                            <div class="row">
+                                <div class="text-center">
+                                    <button id="btnReturn" type="button" class="btn btn-primary btn-lg">Click here to return</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
